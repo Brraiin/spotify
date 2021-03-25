@@ -21,8 +21,7 @@ module.exports = {
 	},
 	variants: {
 		extend: {
-			padding: ['last'],
-			margin: ['group-hover', 'last'],
+			margin: ['group-hover'],
 			width: ['last'],
 			position: ['group-hover'],
 			ringColor: ['hover'],

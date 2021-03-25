@@ -203,8 +203,8 @@
 				@keydown.escape="isOpen = false"
 				class="h-8 p-1 flex items-center rounded-full text-white bg-black focus:outline-none focus:border-transparent"
 				:class="{ 'bg-background-highlight' : isOpen }">
-					<div class="h-7 w-7 rounded-full bg-red-700 overflow-hidden">
-						<img src="img/photo_profil.jpg" alt="" class="object-cover">
+					<div class="h-7 w-7 rounded-full bg-gray-800 overflow-hidden">
+						<img src="img/photo_profil.jpg" alt="" class="object-cover w-full h-full">
 					</div>
 					<span class="mx-2 text-xs tracking-wider font-semibold">brraiin</span>
 					<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="h-5 w-5 fill-current" :class="{ 'transform rotate-180' : isOpen }"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M7 10l5 5 5-5H7z"/></svg>	
@@ -245,10 +245,10 @@
 				</a>
 			</div>
 			<div class="mt-4 pb-3 flex w-full overflow-x-auto custom_scroll md:mt-7 md:overflow-hidden">
-				<div class="px-4 inline-flex">
+				<div class=" inline-flex">
 					<template x-for="item in items">
-						<a href="dailyMix.html" class="mr-4 last:mr-0 relative flex justify-start items-center flex-shrink-0 focus:outline-none focus:border-transparent group md:w-1/3 lg:w-1/4 xl:w-1/5 2xl:w-1/6">
-							<div class="md:py-4 md:px-3 w-44 md:w-full md:rounded-md text-left md:bg-background-lightgray group-hover:bg-background-highlight transition duration-300 ease-in-out">
+						<a href="dailyMix.html" class="pl-4 relative flex justify-start items-center flex-shrink-0 focus:outline-none focus:border-transparent group md:w-1/3 lg:w-1/4 xl:w-1/5 2xl:w-1/6">
+							<div class="sm:py-4 md:px-3 w-44 md:w-full md:rounded-md text-left md:bg-background-lightgray group-hover:bg-background-highlight transition duration-300 ease-in-out">
 								<img :src="`img/${item.imgsrc}`" :alt="item.title" class="w-full object-cover card-shadow">
 								<h2 x-text="item.title"
 									class="hidden md:block mt-3 truncate tracking-wide text-sm text-white font-semibold">
